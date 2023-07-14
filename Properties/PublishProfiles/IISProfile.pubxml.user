@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <EncryptedPassword>eyJCb2R5IjoiTW10dUlFVmR6a3lrQ1JuVGxRdUVMQT09IiwiSGVhZGVyIjp7IlRpbWVzdGFtcCI6MTY4MzAzNjQ5OCwiU2lnbmF0dXJlIjoiMzI5MkIyMUQyQTQxNzJEMDk0QjM4MzY3NTI4NTFCMzYifX0=</EncryptedPassword>
+    <History>False|2023-05-02T10:07:47.3414996-04:00;True|2023-04-27T10:00:19.1527010-04:00;False|2023-04-27T09:56:06.6120602-04:00;False|2023-04-27T09:51:24.0966546-04:00;True|2023-04-26T16:16:33.5943523-04:00;False|2023-04-26T15:39:47.8823316-04:00;False|2023-04-25T14:01:57.7842187-04:00;False|2023-04-25T12:56:18.0863372-04:00;False|2023-04-25T12:04:48.1049222-04:00;False|2023-04-25T11:59:43.5681236-04:00;False|2023-04-25T09:10:53.4643955-04:00;False|2023-04-24T16:56:54.5913920-04:00;False|2023-04-24T16:43:51.4750472-04:00;False|2023-04-24T16:17:48.7390852-04:00;False|2023-04-24T16:16:54.5342984-04:00;False|2023-04-24T16:09:03.0024689-04:00;False|2023-04-24T16:07:56.2755708-04:00;False|2023-04-24T16:04:09.9083530-04:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="192.168.20.37.Produccion_2022">
+      <Value>Data Source=192.168.20.37;Initial Catalog=Produccion_2022;User ID=istok.carvallo;Password=prag;Trust Server Certificate=True</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

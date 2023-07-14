@@ -1,0 +1,6 @@
+C:\Desarrollo Web\Packing3\Packing3\bin\Release\net6.0\publish\appsettings.Development.json
+C:\Desarrollo Web\Packing3\Packing3\bin\Release\net6.0\publish\appsettings.json
+C:\Desarrollo Web\Packing3\Packing3\bin\Release\net6.0\publish\Packing3.pdb
+C:\Desarrollo Web\Packing3\Packing3\bin\Release\net6.0\publish\aspnetcorev2_inprocess.dll
+C:\Desarrollo Web\Packing3\Packing3\bin\Release\net6.0\publish\Microsoft.Data.SqlClient.SNI.dll
+C:\Desarrollo Web\Packing3\Packing3\bin\Release\net6.0\publish\Packing3.exe

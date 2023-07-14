@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Configuration>Debug</Configuration>
+    <Platform>AnyCPU</Platform>
+    <ApplicationIcon>Packing3.ico</ApplicationIcon>
+    <PackageIconUrl>C:\Desarrollo Web\Packing3\Packing3\Packing3.ico</PackageIconUrl>
+    <PackageLicenseExpression />
+    <PackageLicenseFile />
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <EnableComHosting>False</EnableComHosting>
+    <Authors>ICS</Authors>
+    <Company>RIOblanco SPA</Company>
+    <Copyright>2022</Copyright>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <NeutralLanguage>es</NeutralLanguage>
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DWNet.Data" Version="4.0.1" />
+    <PackageReference Include="DWNet.Data.AspNetCore" version="4.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.15" />
+    <PackageReference Include="SnapObjects.Data" Version="4.0.1" />
+    <PackageReference Include="SnapObjects.Data.AspNetCore" version="4.0.1" />
+    <PackageReference Include="SnapObjects.Data.SqlServer" Version="4.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+</Project>
