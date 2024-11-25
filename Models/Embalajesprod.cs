@@ -10,7 +10,7 @@ namespace Packing3
     {
         [Key]
         [SqlColumn("emba_codigo")]
-        public string Emba_Codigo { get; set; }
+        public string? Emba_Codigo { get; set; }
 
         [Key]
         [SqlColumn("clie_codigo")]
@@ -120,6 +120,9 @@ namespace Packing3
 
         [SqlColumn("emba_atmosf")]
         public decimal? Emba_Atmosf { get; set; }
+
+        [SqlColumn("emba_descri")]
+        public string? Emba_Descri { get; set; }
 
     }
 }

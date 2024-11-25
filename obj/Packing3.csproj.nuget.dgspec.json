@@ -13,12 +13,8 @@
         "packagesPath": "C:\\Users\\istok.carvallo\\.nuget\\packages\\",
         "outputPath": "C:\\Desarrollo Web\\Packing3\\Packing3\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\istok.carvallo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +35,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -47,11 +48,11 @@
           "dependencies": {
             "DWNet.Data": {
               "target": "Package",
-              "version": "[4.0.1, )"
+              "version": "[4.2.0, )"
             },
             "DWNet.Data.AspNetCore": {
               "target": "Package",
-              "version": "[4.0.1, )"
+              "version": "[4.2.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -59,15 +60,15 @@
             },
             "SnapObjects.Data": {
               "target": "Package",
-              "version": "[4.0.1, )"
+              "version": "[4.2.0, )"
             },
             "SnapObjects.Data.AspNetCore": {
               "target": "Package",
-              "version": "[4.0.1, )"
+              "version": "[4.2.0, )"
             },
             "SnapObjects.Data.SqlServer": {
               "target": "Package",
-              "version": "[4.0.1, )"
+              "version": "[4.2.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -80,7 +81,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -92,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

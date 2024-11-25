@@ -15,12 +15,14 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDataContext<Produccion_2022DataContext>(m => m.UseSqlServer(builder.Configuration, "192.168.20.37.Produccion_2022"));
+
+builder.Services.AddDataContext<Produccion_2022DataContext>(m => m.UseSqlServer(builder.Configuration, "Produccion_2023"));
 builder.Services.AddScoped<IEmbalajesprodService, EmbalajesprodService>();
 builder.Services.AddScoped<IEnvasesService, EnvasesService>();
 builder.Services.AddScoped<IGtin_Dun14Service, Gtin_Dun14Service>();
 builder.Services.AddScoped<ICorrelfolioService, CorrelfolioService>();
 builder.Services.AddScoped<ITipopallembaService, TipopallembaService>();
+builder.Services.AddScoped<ICalibresEnvaseService, CalibresEnvaseService>();
 builder.Services.AddScoped<IUserService, UserService>();
 
 var key = Encoding.UTF8.GetBytes(SecretInfo.SECRET);
@@ -48,8 +50,8 @@ app.UseAuthentication();
 // Configure the HTTP request pipeline.
 //if (app.Environment.IsDevelopment())
 //{
-    app.UseSwagger();
-    app.UseSwaggerUI();
+app.UseSwagger();
+app.UseSwaggerUI();
 //}
 
 app.UseHttpsRedirection();
