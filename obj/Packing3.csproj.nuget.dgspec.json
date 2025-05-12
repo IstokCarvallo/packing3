@@ -13,21 +13,24 @@
         "packagesPath": "C:\\Users\\istok.carvallo\\.nuget\\packages\\",
         "outputPath": "C:\\Desarrollo Web\\Packing3\\Packing3\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\istok.carvallo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -40,19 +43,20 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "DWNet.Data": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[4.3.1, )"
             },
             "DWNet.Data.AspNetCore": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[4.3.1, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -60,11 +64,11 @@
             },
             "SnapObjects.Data": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[4.3.1, )"
             },
             "SnapObjects.Data.AspNetCore": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[4.3.1, )"
             },
             "SnapObjects.Data.SqlServer": {
               "target": "Package",
@@ -94,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

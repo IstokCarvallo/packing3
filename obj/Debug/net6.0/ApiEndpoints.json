@@ -180,6 +180,31 @@
     ]
   },
   {
+    "ContainingType": "Packing3.Controllers.TimbresDespachoController",
+    "Method": "RetrieveAllAsync",
+    "RelativePath": "api/TimbresDespacho/RetrieveAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Packing3.Models.spro_TimbresDespacho",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
     "ContainingType": "Packing3.Controllers.TipopallembaController",
     "Method": "RetrieveAsync",
     "RelativePath": "api/Tipopallemba/Retrieve/{cliente}/{embalaje}",

@@ -80,10 +80,14 @@ C:\Desarrollo Web\Packing3\Packing3\obj\Debug\net6.0\refint\Packing3.dll
 C:\Desarrollo Web\Packing3\Packing3\obj\Debug\net6.0\Packing3.pdb
 C:\Desarrollo Web\Packing3\Packing3\obj\Debug\net6.0\Packing3.genruntimeconfig.cache
 C:\Desarrollo Web\Packing3\Packing3\obj\Debug\net6.0\ref\Packing3.dll
+C:\Desarrollo Web\Packing3\Packing3\bin\Debug\net6.0\Packing3.staticwebassets.endpoints.json
 C:\Desarrollo Web\Packing3\Packing3\obj\Debug\net6.0\Packing3.sourcelink.json
+C:\Desarrollo Web\Packing3\Packing3\obj\Debug\net6.0\staticwebassets.build.endpoints.json
 C:\Desarrollo Web\Packing3\Packing3\obj\Debug\net6.0\staticwebassets\msbuild.Packing3.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Desarrollo Web\Packing3\Packing3\obj\Debug\net6.0\staticwebassets\msbuild.Packing3.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 C:\Desarrollo Web\Packing3\Packing3\obj\Debug\net6.0\staticwebassets\msbuild.build.Packing3.props
 C:\Desarrollo Web\Packing3\Packing3\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Packing3.props
 C:\Desarrollo Web\Packing3\Packing3\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Packing3.props
 C:\Desarrollo Web\Packing3\Packing3\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Desarrollo Web\Packing3\Packing3\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
 C:\Desarrollo Web\Packing3\Packing3\obj\Debug\net6.0\Packing3.csproj.Up2Date

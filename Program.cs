@@ -23,7 +23,9 @@ builder.Services.AddScoped<IGtin_Dun14Service, Gtin_Dun14Service>();
 builder.Services.AddScoped<ICorrelfolioService, CorrelfolioService>();
 builder.Services.AddScoped<ITipopallembaService, TipopallembaService>();
 builder.Services.AddScoped<ICalibresEnvaseService, CalibresEnvaseService>();
-builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ISpro_TimbresdespachoService, Spro_TimbresdespachoService>();
+builder.Services.AddScoped<ICodigoOperacionalService, CodigoOperacionalService>();
+builder.Services.AddScoped<ITimbreSAGService, TimbreSAGService>();
 
 var key = Encoding.UTF8.GetBytes(SecretInfo.SECRET);
 builder.Services.AddAuthentication(x =>

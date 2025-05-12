@@ -1,0 +1,1056 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Packing3",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/CalibresEnvase/Retrieve/{especie}/{tipo}/{codigo}": {
+      "get": {
+        "tags": [
+          "CalibresEnvase"
+        ],
+        "parameters": [
+          {
+            "name": "especie",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "tipo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "codigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CalibresEnvase"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CalibresEnvase"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CalibresEnvase"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/CodigoOperacional/Retrieve": {
+      "get": {
+        "tags": [
+          "CodigoOperacional"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CodigoOperacional"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CodigoOperacional"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CodigoOperacional"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/Correlfolio/Retrieve/{Cliente}": {
+      "get": {
+        "tags": [
+          "Correlfolio"
+        ],
+        "parameters": [
+          {
+            "name": "Cliente",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Correlfolio"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Correlfolio"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Correlfolio"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/Embalajesprod/RetrieveOne/{emba_codigo}/{clie_codigo}": {
+      "get": {
+        "tags": [
+          "Embalajesprod"
+        ],
+        "parameters": [
+          {
+            "name": "emba_codigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "clie_codigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Embalajesprod"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Embalajesprod"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Embalajesprod"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/Envases/RetrieveOne/{enva_tipoen}/{enva_codigo}": {
+      "get": {
+        "tags": [
+          "Envases"
+        ],
+        "parameters": [
+          {
+            "name": "enva_tipoen",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "enva_codigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envases"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envases"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Envases"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/Gtin_Dun14/Retrieve/{cliente}/{embalaje}": {
+      "get": {
+        "tags": [
+          "Gtin_Dun14"
+        ],
+        "parameters": [
+          {
+            "name": "cliente",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "embalaje",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Gtin_Dun14"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Gtin_Dun14"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Gtin_Dun14"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/Spro_Timbresdespacho/Retrieve": {
+      "get": {
+        "tags": [
+          "Spro_Timbresdespacho"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Spro_Timbresdespacho"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Spro_Timbresdespacho"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Spro_Timbresdespacho"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/TimbreSAG/Retrieve": {
+      "get": {
+        "tags": [
+          "TimbreSAG"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TimbreSAG"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TimbreSAG"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TimbreSAG"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/Tipopallemba/Retrieve/{cliente}/{embalaje}": {
+      "get": {
+        "tags": [
+          "Tipopallemba"
+        ],
+        "parameters": [
+          {
+            "name": "cliente",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "embalaje",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Tipopallemba"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Tipopallemba"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Tipopallemba"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/User": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CalibresEnvase": {
+        "type": "object",
+        "properties": {
+          "espe_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "enva_Tipoen": {
+            "type": "number",
+            "format": "double"
+          },
+          "enva_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "caen_Calibr": {
+            "type": "string",
+            "nullable": true
+          },
+          "caen_Grupoc": {
+            "type": "string",
+            "nullable": true
+          },
+          "caen_Calest": {
+            "type": "string",
+            "nullable": true
+          },
+          "caen_Column": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "caen_Ordena": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "enva_Nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "caen_Cales2": {
+            "type": "string",
+            "nullable": true
+          },
+          "caen_Pordis": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "caen_Pordi2": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "tien_Nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "compute_1": {
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CodigoOperacional": {
+        "type": "object",
+        "properties": {
+          "coop_Codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "espe_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "coop_Nombre": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Correlfolio": {
+        "type": "object",
+        "properties": {
+          "clie_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "plde_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "spco_Corini": {
+            "type": "number",
+            "format": "double"
+          },
+          "spco_Corter": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "spco_Estado": {
+            "type": "number",
+            "format": "double"
+          },
+          "spco_Ultcor": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "paen_Tipopa": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Embalajesprod": {
+        "type": "object",
+        "properties": {
+          "emba_Codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "clie_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "envo_Codigo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "enva_Tipoen": {
+            "type": "number",
+            "format": "double"
+          },
+          "enva_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "emba_Nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "emba_Abrevi": {
+            "type": "string",
+            "nullable": true
+          },
+          "emba_Cajpal": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Nomlar": {
+            "type": "string",
+            "nullable": true
+          },
+          "emes_Codigo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Tiprpc": {
+            "type": "string",
+            "nullable": true
+          },
+          "emba_Dimens": {
+            "type": "string",
+            "nullable": true
+          },
+          "espe_Codigo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Codcli": {
+            "type": "string",
+            "nullable": true
+          },
+          "etiq_Codigo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Pesmin": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Pesmax": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Pesnet": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Altura": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Columna": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Nrogs1": {
+            "type": "string",
+            "nullable": true
+          },
+          "emba_Nroint": {
+            "type": "string",
+            "nullable": true
+          },
+          "emba_Usapes": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Tipbol": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Tipvid": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Codant": {
+            "type": "string",
+            "nullable": true
+          },
+          "emba_Perten": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Flgexp": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Vigent": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Tipofr": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Premium": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Flggra": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Flgvar": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Flgpsn": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "copa_Codigo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Flgusn": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Atmosf": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Descri": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Envases": {
+        "type": "object",
+        "properties": {
+          "enva_Tipoen": {
+            "type": "number",
+            "format": "double"
+          },
+          "enva_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "enva_Nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "enva_Pesone": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "enva_Pesobr": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "enva_Dfaesp": {
+            "type": "string",
+            "nullable": true
+          },
+          "enva_Dfaing": {
+            "type": "string",
+            "nullable": true
+          },
+          "emes_Codigo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "enva_Kilcua": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "enva_Noming": {
+            "type": "string",
+            "nullable": true
+          },
+          "enva_Tipoma": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "enva_Unidad": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "enva_Agrupa": {
+            "type": "string",
+            "nullable": true
+          },
+          "enva_Peslib": {
+            "type": "string",
+            "nullable": true
+          },
+          "cons_Control": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "enva_Pestra": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "enva_Perten": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "enva_Caifco": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Gtin_Dun14": {
+        "type": "object",
+        "properties": {
+          "clie_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "gtin_Numero": {
+            "type": "number",
+            "format": "double"
+          },
+          "espe_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "vari_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "emba_Codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "espe_Nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "vari_Nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "emba_Nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "gtin_Calibr": {
+            "maxLength": 3,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "todocal": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "gtin_Codplu": {
+            "type": "string",
+            "nullable": true
+          },
+          "gtin_Codupc": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Spro_Timbresdespacho": {
+        "type": "object",
+        "properties": {
+          "tide_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "tide_Descri": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TimbreSAG": {
+        "type": "object",
+        "properties": {
+          "tisa_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "tisa_Nombre": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tipopallemba": {
+        "type": "object",
+        "properties": {
+          "clie_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "emba_Codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "tpem_Codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "tpem_Cancaj": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "tpem_Altura": {
+            "type": "number",
+            "format": "double"
+          },
+          "emba_Nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "emba_Altura": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "emba_Columna": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "compute_1": {
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "User": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          },
+          "token": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

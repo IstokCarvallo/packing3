@@ -3,5 +3,7 @@
   <PropertyGroup>
     <ActiveDebugProfile>Packing3</ActiveDebugProfile>
     <NameOfLastUsedPublishProfile>C:\Desarrollo Web\Packing3\Packing3\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
+    <Controller_SelectedScaffolderID>MvcControllerWithActionsScaffolder</Controller_SelectedScaffolderID>
+    <Controller_SelectedScaffolderCategoryPath>root/Common/MVC/Controller</Controller_SelectedScaffolderCategoryPath>
   </PropertyGroup>
 </Project>
