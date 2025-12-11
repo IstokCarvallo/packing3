@@ -41,6 +41,31 @@
     ]
   },
   {
+    "ContainingType": "Packing3.Controllers.CodigoOperacionalController",
+    "Method": "RetrieveAsync",
+    "RelativePath": "api/CodigoOperacional/Retrieve",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IList\u00601[[Packing3.Models.CodigoOperacional, Packing3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
     "ContainingType": "Packing3.Controllers.CorrelfolioController",
     "Method": "RetrieveAsync",
     "RelativePath": "api/Correlfolio/Retrieve/{Cliente}",
@@ -180,16 +205,41 @@
     ]
   },
   {
-    "ContainingType": "Packing3.Controllers.TimbresDespachoController",
-    "Method": "RetrieveAllAsync",
-    "RelativePath": "api/TimbresDespacho/RetrieveAll",
+    "ContainingType": "Packing3.Controllers.Spro_TimbresdespachoController",
+    "Method": "RetrieveAsync",
+    "RelativePath": "api/Spro_Timbresdespacho/Retrieve",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "Packing3.Models.spro_TimbresDespacho",
+        "Type": "System.Collections.Generic.IList\u00601[[Packing3.Models.Spro_Timbresdespacho, Packing3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Packing3.Controllers.TimbreSAGController",
+    "Method": "RetrieveAsync",
+    "RelativePath": "api/TimbreSAG/Retrieve",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IList\u00601[[Packing3.Models.TimbreSAG, Packing3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

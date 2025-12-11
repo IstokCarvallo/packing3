@@ -75,6 +75,47 @@
         }
       }
     },
+    "/api/CodigoOperacional/Retrieve": {
+      "get": {
+        "tags": [
+          "CodigoOperacional"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CodigoOperacional"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CodigoOperacional"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CodigoOperacional"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
     "/api/Correlfolio/Retrieve/{Cliente}": {
       "get": {
         "tags": [
@@ -290,10 +331,10 @@
         }
       }
     },
-    "/api/TimbresDespacho/RetrieveAll": {
+    "/api/Spro_Timbresdespacho/Retrieve": {
       "get": {
         "tags": [
-          "TimbresDespacho"
+          "Spro_Timbresdespacho"
         ],
         "responses": {
           "200": {
@@ -301,17 +342,67 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/spro_TimbresDespacho"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Spro_Timbresdespacho"
+                  }
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/spro_TimbresDespacho"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Spro_Timbresdespacho"
+                  }
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/spro_TimbresDespacho"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Spro_Timbresdespacho"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/TimbreSAG/Retrieve": {
+      "get": {
+        "tags": [
+          "TimbreSAG"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TimbreSAG"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TimbreSAG"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TimbreSAG"
+                  }
                 }
               }
             }
@@ -476,6 +567,24 @@
             "nullable": true
           },
           "compute_1": {
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CodigoOperacional": {
+        "type": "object",
+        "properties": {
+          "coop_Codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "espe_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "coop_Nombre": {
+            "type": "string",
             "nullable": true
           }
         },
@@ -844,7 +953,7 @@
         },
         "additionalProperties": false
       },
-      "spro_TimbresDespacho": {
+      "Spro_Timbresdespacho": {
         "type": "object",
         "properties": {
           "tide_Codigo": {
@@ -852,6 +961,20 @@
             "format": "double"
           },
           "tide_Descri": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TimbreSAG": {
+        "type": "object",
+        "properties": {
+          "tisa_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "tisa_Nombre": {
             "type": "string",
             "nullable": true
           }

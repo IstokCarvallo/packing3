@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "bLsz644ewNCzt39PLRhd28nBoebRYzy1pwOIWd2ZhC8=",
+  "Hash": "3Kq+mjri8VDtA2J28dTrvR1H+fDRZFUYpPT9yDjQXpE=",
   "Source": "Packing3",
   "BasePath": "_content/Packing3",
   "Mode": "Default",
   "ManifestType": "Publish",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "yWcO1Y8C650qt5y+P5h+ooekUu06N+kacpoXEiqTwDI=",
-  "Source": "Packing3",
-  "BasePath": "_content/Packing3",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"yWcO1Y8C650qt5y+P5h+ooekUu06N+kacpoXEiqTwDI=","Source":"Packing3","BasePath":"_content/Packing3","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

@@ -5,6 +5,7 @@ using SnapObjects.Data;
 using System;
 using Packing3;
 using Packing3.Models;
+using DWNet.Data;
 
 namespace Packing3.Services.Impl
 {
@@ -17,7 +18,6 @@ namespace Packing3.Services.Impl
         public CodigoOperacionalService(Produccion_2022DataContext dataContext) : base(dataContext)
         {
         }
-
         public async Task<IList<CodigoOperacional>> RetrieveAsync( CancellationToken cancellationToken)
 		{
 			var result = await _dataContext.SqlModelMapper
