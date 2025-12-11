@@ -205,6 +205,93 @@
     ]
   },
   {
+    "ContainingType": "Packing3.Controllers.PlantadespController",
+    "Method": "RetrieveOneAsync",
+    "RelativePath": "api/Plantadesp/RetrieveOne/{plde_codigo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "plde_codigo",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Packing3.Models.Plantadesp",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Packing3.Controllers.Spro_ProdcuartelesController",
+    "Method": "RetrieveAsync",
+    "RelativePath": "api/Spro_Prodcuarteles/Retrieve",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IList\u00601[[Packing3.Models.Spro_Prodcuarteles, Packing3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Packing3.Controllers.Spro_ProdcuartelesController",
+    "Method": "RetrieveOneAsync",
+    "RelativePath": "api/Spro_Prodcuarteles/RetrieveOne/{prod_codigo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "prod_codigo",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Packing3.Models.Spro_Prodcuarteles",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
     "ContainingType": "Packing3.Controllers.Spro_TimbresdespachoController",
     "Method": "RetrieveAsync",
     "RelativePath": "api/Spro_Timbresdespacho/Retrieve",

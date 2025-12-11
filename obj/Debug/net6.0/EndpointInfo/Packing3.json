@@ -331,6 +331,133 @@
         }
       }
     },
+    "/api/Plantadesp/RetrieveOne/{plde_codigo}": {
+      "get": {
+        "tags": [
+          "Plantadesp"
+        ],
+        "parameters": [
+          {
+            "name": "plde_codigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Plantadesp"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Plantadesp"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Plantadesp"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/Spro_Prodcuarteles/RetrieveOne/{prod_codigo}": {
+      "get": {
+        "tags": [
+          "Spro_Prodcuarteles"
+        ],
+        "parameters": [
+          {
+            "name": "prod_codigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Spro_Prodcuarteles"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Spro_Prodcuarteles"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Spro_Prodcuarteles"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
+    "/api/Spro_Prodcuarteles/Retrieve": {
+      "get": {
+        "tags": [
+          "Spro_Prodcuarteles"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Spro_Prodcuarteles"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Spro_Prodcuarteles"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Spro_Prodcuarteles"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    },
     "/api/Spro_Timbresdespacho/Retrieve": {
       "get": {
         "tags": [
@@ -947,6 +1074,601 @@
             "nullable": true
           },
           "gtin_Codupc": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Plantadesp": {
+        "type": "object",
+        "properties": {
+          "plde_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "cone_Codigo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Insfda": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "zona_Codigo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Tipopl": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Razsoc": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Direcc": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Ciudad": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Nrotel": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Nrorut": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Repres": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Codsag": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Region": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Provin": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Comuna": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Admini": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Atenc1": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Atenc2": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Atenc3": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Atenc4": {
+            "type": "string",
+            "nullable": true
+          },
+          "comu_Codigo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Insfda2": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Codpla": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Correo": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Nomfda": {
+            "type": "string",
+            "nullable": true
+          },
+          "ciud_Codigo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Prvsag": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Comsag": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Codmul": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Pacvir": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Gencaj": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Propie": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Conpro": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Paccom": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Cajbul": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Glncod": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Cuaren": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Idpclb": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Chasag": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Blkwal": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Corplt": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Corsam": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Renenv": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Abrevi": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Corrjp": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Perten": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Fecres": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "plde_Nomres": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Corter": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Cormat": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Interp": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Comfds": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Tiempo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Capemb": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Diapro": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Oficen": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Giroem": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Ciuori": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Comori": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Dirori": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Cargopr": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Tippac": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "plde_Corpro": {
+            "type": "string",
+            "nullable": true
+          },
+          "plde_Codope": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Spro_Prodcuarteles": {
+        "type": "object",
+        "properties": {
+          "prod_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "prpr_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "prcc_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "prcc_Nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "prcc_Cuapro": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Nompro": {
+            "type": "string",
+            "nullable": true
+          },
+          "espe_Codigo": {
+            "type": "number",
+            "format": "double"
+          },
+          "vari_Codigo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "siri_Codigo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "sico_Codigo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Superf": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Porinj": {
+            "type": "string",
+            "nullable": true
+          },
+          "prcc_Anoinj": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Ptasob": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Ptaent": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Nropta": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Anopla": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Disgot": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Caugot": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Gothec": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Gashec": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Cjtem1": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Cjtem2": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Cjtem3": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Cjtem4": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Cjtem5": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Densid": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Plabue": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Plareg": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Plamal": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Frubue": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Frureg": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Frumal": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Encarg": {
+            "type": "string",
+            "nullable": true
+          },
+          "patr_Codigo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "tipl_Codigo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Fecact": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "prcc_Observ": {
+            "type": "string",
+            "nullable": true
+          },
+          "prcc_Obscli": {
+            "type": "string",
+            "nullable": true
+          },
+          "prcc_Obsral": {
+            "type": "string",
+            "nullable": true
+          },
+          "prcc_Obsman": {
+            "type": "string",
+            "nullable": true
+          },
+          "prcc_Porpro": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Pprose": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Poremb": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Pembse": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Cmedse": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Calmed": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Estado": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Cajhec": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Cajcuar": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Codhom": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Nomhom": {
+            "type": "string",
+            "nullable": true
+          },
+          "prcc_Cuahom": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Kunif": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Pesrac": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Pesnor": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Semini": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Fecini": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "prcc_Sector": {
+            "type": "string",
+            "nullable": true
+          },
+          "prcc_System": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "prcc_Codope": {
             "type": "string",
             "nullable": true
           }

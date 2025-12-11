@@ -1,4 +1,3 @@
-using System;
 using SnapObjects.Data;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -12,11 +11,9 @@ namespace Packing3.Models
         [SqlColumn("prod_codigo")]
         public decimal Prod_Codigo { get; set; }
 
-        [Key]
         [SqlColumn("prpr_codigo")]
         public decimal Prpr_Codigo { get; set; }
 
-        [Key]
         [SqlColumn("prcc_codigo")]
         public decimal Prcc_Codigo { get; set; }
 
@@ -35,11 +32,9 @@ namespace Packing3.Models
         [SqlColumn("vari_codigo")]
         public decimal? Vari_Codigo { get; set; }
 
-        [Key]
         [SqlColumn("siri_codigo")]
         public decimal? Siri_Codigo { get; set; }
 
-        [Key]
         [SqlColumn("sico_codigo")]
         public decimal? Sico_Codigo { get; set; }
 
