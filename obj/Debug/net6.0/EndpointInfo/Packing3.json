@@ -374,7 +374,7 @@
         }
       }
     },
-    "/api/Spro_Prodcuarteles/RetrieveOne/{prod_codigo}": {
+    "/api/Spro_Prodcuarteles/RetrieveOne/{prod_codigo}/{predio}/{cuartel}": {
       "get": {
         "tags": [
           "Spro_Prodcuarteles"
@@ -382,6 +382,24 @@
         "parameters": [
           {
             "name": "prod_codigo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "predio",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "cuartel",
             "in": "path",
             "required": true,
             "schema": {

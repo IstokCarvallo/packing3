@@ -16,31 +16,14 @@ namespace Packing3.Controllers
         }
 
         //GET api/Spro_Prodcuarteles/RetrieveOne/{prod_codigo}
-        [HttpGet("{prod_codigo}")]
+        [HttpGet("{prod_codigo}/{predio}/{cuartel}")]
         [ProducesResponseType(typeof(Spro_Prodcuarteles), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult<Spro_Prodcuarteles>> RetrieveOneAsync(decimal prod_codigo)
+        public async Task<ActionResult<Spro_Prodcuarteles>> RetrieveOneAsync(decimal prod_codigo, decimal predio, decimal cuartel)
         {
             try
             {
-                var result = await _ispro_prodcuartelesservice.RetrieveOneAsync(prod_codigo, default);
-                return Ok(result);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
-            }
-        }
-
-        //GET api/Spro_Prodcuarteles/Retrieve
-        [HttpGet]
-        [ProducesResponseType(typeof(IList<Spro_Prodcuarteles>), StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult<IList<Spro_Prodcuarteles>>> RetrieveAsync()
-        {
-            try
-            {
-                var result = await _ispro_prodcuartelesservice.RetrieveAsync(default);
+                var result = await _ispro_prodcuartelesservice.RetrieveOneAsync(prod_codigo, predio, cuartel, default);
                 return Ok(result);
             }
             catch (Exception ex)

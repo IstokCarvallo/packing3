@@ -12,19 +12,11 @@ namespace Packing3.Services.Impl
         {
         }
 
-        public async Task<Spro_Prodcuarteles> RetrieveOneAsync(decimal prod_codigo, CancellationToken cancellationToken)
+        public async Task<Spro_Prodcuarteles> RetrieveOneAsync(decimal prod_codigo, decimal predio, decimal cuartel, CancellationToken cancellationToken)
         {
-            var result = await _dataContext.SqlModelMapper.LoadByKeyAsync<Spro_Prodcuarteles>(new object[] { prod_codigo }, cancellationToken);
+            var result = await _dataContext.SqlModelMapper.LoadByKeyAsync<Spro_Prodcuarteles>(new object[] { prod_codigo, predio, cuartel }, cancellationToken);
 
             return result.FirstOrDefault();
         }
-
-		public async Task<IList<Spro_Prodcuarteles>> RetrieveAsync( CancellationToken cancellationToken)
-		{
-			var result = await _dataContext.SqlModelMapper
-						.LoadAsync<Spro_Prodcuarteles>(new object[] { },  cancellationToken);
-
-			return result.ToList();
-		}
     }
 }

@@ -10,10 +10,10 @@ namespace Packing3.Models
         [Key]
         [SqlColumn("prod_codigo")]
         public decimal Prod_Codigo { get; set; }
-
+        [Key]
         [SqlColumn("prpr_codigo")]
         public decimal Prpr_Codigo { get; set; }
-
+        [Key]
         [SqlColumn("prcc_codigo")]
         public decimal Prcc_Codigo { get; set; }
 

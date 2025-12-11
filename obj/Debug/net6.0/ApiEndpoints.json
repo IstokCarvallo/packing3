@@ -263,13 +263,23 @@
   {
     "ContainingType": "Packing3.Controllers.Spro_ProdcuartelesController",
     "Method": "RetrieveOneAsync",
-    "RelativePath": "api/Spro_Prodcuarteles/RetrieveOne/{prod_codigo}",
+    "RelativePath": "api/Spro_Prodcuarteles/RetrieveOne/{prod_codigo}/{predio}/{cuartel}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "prod_codigo",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "predio",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "cuartel",
         "Type": "System.Decimal",
         "IsRequired": true
       }
